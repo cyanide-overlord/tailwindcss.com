@@ -16,6 +16,7 @@ jobs:
       - name: Build
         run: |
                 yarn
+                rm .git -rf
                 tar -cJf out.tar.xz *
       - name: Upload artifact
         uses: actions/upload-artifact@v3
