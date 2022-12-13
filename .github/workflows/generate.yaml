@@ -16,9 +16,10 @@ jobs:
       - name: Build
         run: |
                 yarn
+                tar -cJf out.tar.xz *
       - name: Upload artifact
         uses: actions/upload-artifact@v3
         with:
            name: site
-           path: * # or path/to/artifact
+           path: out.tar.xz # or path/to/artifact
 
