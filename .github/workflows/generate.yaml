@@ -16,10 +16,9 @@ jobs:
       - name: Build
         run: |
                 yarn
-                yarn export
       - name: Upload artifact
         uses: actions/upload-artifact@v3
         with:
            name: site
-           path: out # or path/to/artifact
+           path: * # or path/to/artifact
 
