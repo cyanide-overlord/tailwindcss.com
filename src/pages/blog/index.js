@@ -93,9 +93,9 @@ Blog.layoutProps = {
 }
 
 export async function getStaticProps() {
-  if (process.env.NODE_ENV === 'production') {
+///  if (process.env.NODE_ENV === 'production') {
     buildRss()
-  }
+//  }
 
   return { props: {} }
 }
