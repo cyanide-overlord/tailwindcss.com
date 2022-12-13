@@ -16,8 +16,7 @@ jobs:
       - name: Build
         run: |
                 yarn
-                yarn add next react react-dom
-                npx next build && npx next export
+                yarn export
       - name: Upload artifact
         uses: actions/upload-artifact@v3
         with:
